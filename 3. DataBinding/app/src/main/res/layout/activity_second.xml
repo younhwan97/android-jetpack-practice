@@ -8,6 +8,13 @@
         android:layout_height="match_parent"
         tools:context=".SecondActivity">
 
+        <FrameLayout
+            android:id="@+id/frameArea"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </FrameLayout>
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
 
