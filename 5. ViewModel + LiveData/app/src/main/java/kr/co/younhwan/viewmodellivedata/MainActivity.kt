@@ -4,7 +4,6 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
-import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModelProvider
 
 // LiveDate
@@ -24,8 +23,8 @@ class MainActivity : AppCompatActivity() {
             viewModel.plus()
         }
 
-        viewModel.testMutableLiveData.observe(this) {
-            findViewById<TextView>(R.id.count).text = viewModel.testMutableLiveData.value.toString()
+        viewModel.testLiveData.observe(this) {
+            findViewById<TextView>(R.id.count).text = it.toString()
         }
     }
 }
