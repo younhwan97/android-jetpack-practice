@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace 'kr.co.younhwan.viewmodellivedata'
+    namespace 'kr.co.younhwan.retrofit'
     compileSdk 32
 
     defaultConfig {
-        applicationId "kr.co.younhwan.viewmodellivedata"
+        applicationId "kr.co.younhwan.retrofit"
         minSdk 26
         targetSdk 32
         versionCode 1
@@ -29,10 +29,6 @@ android {
     }
     kotlinOptions {
         jvmTarget = '1.8'
-    }
-
-    buildFeatures {
-        viewBinding true
     }
 }
 
